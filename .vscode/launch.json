@@ -10,7 +10,7 @@
     },
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
+      "type": "lldb",
       "request": "launch",
       "args": [
         ""
@@ -21,7 +21,7 @@
       "program": "/Users/karthikreddy/Desktop/cnlab/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "lldb",
-      "externalConsole": true
+      "externalConsole": false
     }
   ]
 }
