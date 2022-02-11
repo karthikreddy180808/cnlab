@@ -13,5 +13,9 @@
   "C_Cpp_Runner.warningsAsError": false,
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "string.h": "c",
+    "types.h": "c"
+  }
 }

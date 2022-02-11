@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -6,7 +7,6 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-
 #define PORT 8080
 #define MAXLINE 1024
 
@@ -33,6 +33,8 @@ int main()
     servaddr.sin_addr.s_addr = INADDR_ANY;
 
     int n, len;
+
+    int MSG_CONFIRM = 200;
 
     sendto(sockfd, (const char *)hello, strlen(hello),
            MSG_CONFIRM, (const struct sockaddr *)&servaddr,
